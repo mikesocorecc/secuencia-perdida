@@ -16,8 +16,8 @@ Este proyecto es una implementación del ejercicio "Secuencia" que consiste en d
  
 
 ## Cómo utilizar el proyecto
-1. Clona el repositorio en tu máquina local: `git clone <URL_DEL_REPOSITORIO>`
-2. Ve a la carpeta del proyecto: `cd secuencia-proyecto`
+1. Clona el repositorio en tu máquina local: `git clone https://github.com/mikesocorecc/secuencia-perdida`
+2. Ve a la carpeta del proyecto: `cd secuencia-perdida`
 3. Instala las dependencias: `npm install`
 4. Inicia el servidor de desarrollo: `npm run dev`
 5. Abre tu navegador y ve a `http://localhost:3000` para acceder al ejercicio "Secuencia".
