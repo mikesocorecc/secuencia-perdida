@@ -1,0 +1,11 @@
+src/
+  |- assets/
+  |- components/
+  |   |- ProgressComponent.vue
+  |   |- ResultComponent.vue
+  |   |- SequenceComponent.vue
+  |   |- TimerComponent.vue 
+  |- store/
+  |   |- game.js
+  |- App.vue
+  |- main.js
