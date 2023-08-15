@@ -55,9 +55,14 @@ export const useGameStore = defineStore('game', () => {
   }
 
   const generateOptions = () => {
-    const optionsData = _.sampleSize(_.range(1, MAX_OPTION_VALUE + 1), NUM_OPTIONS - 1)
-    optionsData.push(missingValue.value)
-    options.value = _.shuffle(optionsData)
+    // Generar opcionesData excluyendo la respuesta correcta de las posibles opciones
+    const optionsData = _.sampleSize(_.difference(_.range(1, MAX_OPTION_VALUE + 1), [missingValue.value]), NUM_OPTIONS - 1);
+
+    // Agregar la respuesta correcta a las opciones generadas
+    optionsData.push(missingValue.value);
+
+    // Mezclar el orden de las opciones generadas
+    options.value = _.shuffle(optionsData);
   }
 
   // Starts a new round by generating a new sequence and new options
