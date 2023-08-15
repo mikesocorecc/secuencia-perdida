@@ -9,6 +9,7 @@
           class="flex justify-center items-center text-5xl font-montserrat md:relative w-[60px] h-[60px] md:w-[115px] md:h-28 lg:w-[135px] lg:h-32 text-center md:text-7xl lg:text-8xl font-semibold text-[#2B4457]"
           :class="getMissingNumberClasses(number)" :style="{ transitionDuration: index * 0.1 + 's' }">
           <!-- {{ number ?? selectedOption }} -->
+
           <template v-if="number !== null">
             {{ number }}
           </template>
